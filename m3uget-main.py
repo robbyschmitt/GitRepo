@@ -90,3 +90,13 @@ zi = str(z.infolist())
 zl = zi.split("'")
 zl = zl[1]
 z.extractall(fpath)
+
+
+# Step to do: Replace the tvgid of free4fisher with my own
+str1 = 'P#EXTINF:-1 tvg-id="3plus.ch" group-title="Deutsch" tvg-logo="0135.png",[COLOR orangered]3+ hd[/COLOR]http://wilmaa.customers.cdn.iptv.ch/1/1013/index.m3u8?token=34ec24a9f1d948566691d6ee41e36f44&expires=1511006957&c=t3'
+tvlist = '3+ HD'
+sublist1 = '3+'
+resub = 'tvg-id="' + sublist1 +'"'
+
+str2 = re.sub('tvg-id="[0-9a-zA-Z]*.[0-9a-zA-Z]*"', resub, str1, re.I)
+str3 = re.search(r'\](.*?)\[', str1)

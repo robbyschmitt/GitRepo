@@ -2,18 +2,16 @@
 
 import requests
 import fileinput
-import sys
-import operator
 from operator import itemgetter
-import urllib
 import zipfile
 import io
 
 # Configure your Files
 fpath = 'U:\\Temp\\'
-ktemp1 = 'ktemp1.tmp'
-ktemp2 = 'ktemp2.tmp'
-tvlist = 'tvlists.txt'
+ktemp1 = 'ktemp1.tmp'  # original List from internet
+ktemp2 = 'ktemp2.tmp'  # File with nested loop to get all programs
+ktemp3 = 'ktemp3.tmp'  # Final list just http and extif in one line
+tvlist = 'tvlist.txt'  # List of all TV Stations wanted
 
 # Get the latest m3u from IPTVSaga
 url = 'http://www.iptvsaga.com/play/tv2/index.php'
@@ -45,7 +43,9 @@ for sender in open(fpath + tvlist, encoding='utf-8'):
 pass
 fl.close()
 
-fl = open(fpath + ktemp1, 'w', encoding='utf-8')
+# Step two : strip list down to the real winners
+
+fl = open(fpath + ktemp3, 'w', encoding='utf-8')
 for clean in open(fpath + ktemp2, 'r', encoding='utf-8').readlines():
     if 'P#EXTINF'in clean:
         clean=clean.replace('P#EXTINF', '#EXTINF')
@@ -57,14 +57,14 @@ fl.close()
 
 # Step three : Make a List with each line as a further list to sort the list of lists by element 2
 klist2 =[]
-for line in fileinput.input(fpath + ktemp1, openhook=fileinput.hook_encoded("utf-8")):
+for line in fileinput.input(fpath + ktemp3, openhook=fileinput.hook_encoded("utf-8")):
     sp = line.split(' ')
     klist2.append(sp)
 
 slist = sorted(klist2, key=itemgetter(4))
 
 # Step four : Make the final m3u List
-fl = open(fpath + 'kodistr-f.m3u', 'a', encoding='utf-8')
+fl = open(fpath + 'kodistr-f.m3u', 'w', encoding='utf-8')
 i = len(slist) - 1
 while i >= 0:
     j = slist[i]

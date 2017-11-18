@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+<settings>
+   
+  <!-- for detailed info about the settings see http://webgrabplus.com/documentation/configuration/webgrabconfigxml -->
+   
+  <filename>guide.xml</filename>
+  <mode></mode>
+  <postprocess grab="y" run="n">mdb</postprocess>
+  <user-agent>Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0</user-agent>
+  <logging>on</logging>
+  <retry time-out="5">4</retry>
+  <timespan>0</timespan>
+  <update>f</update>
+ 
+  <!--
+            Replace the next dummy channel entry with the channels you want.
+			You can look into the installed siteini.pack folder on your computer
+  
+            For the latest version,
+            see http://webgrabplus.com/epg-channels for the available sites/channels
+  -->
+ 
+
+    <channel update="i" site="srf.ch" site_id="srf-1" xmltv_id="SRF 1">SRF 1</channel>
+    <channel update="i" site="srf.ch" site_id="srf-2" xmltv_id="SRF zwei">SRF zwei</channel>
+    <channel update="i" site="srf.ch" site_id="srf-info" xmltv_id="SRF info">SRF info</channel>
+    <channel update="i" site="srf.ch" site_id="tele-zuri" xmltv_id="Tele Züri">Tele Züri</channel>
+
+ <channel update="i" site="tvdigital.de" site_id="mdr" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tvdigital.de" site_id="mtv" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvdigital.de" site_id="n24" xmltv_id="N24">N24</channel>
+    <channel update="i" site="tvdigital.de" site_id="ndr" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tvdigital.de" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tvdigital.de" site_id="orfeins" xmltv_id="ORF eins">ORF eins</channel>
+    <channel update="i" site="tvdigital.de" site_id="orf2" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="tvdigital.de" site_id="phoenix" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="tvdigital.de" site_id="prosieben" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="tvdigital.de" site_id="prosiebenmaxx" xmltv_id="ProSieben Maxx">ProSieben Maxx</channel>
+    <channel update="i" site="tvdigital.de" site_id="puls4" xmltv_id="Puls 4">Puls 4</channel>
+    <channel update="i" site="tvdigital.de" site_id="rtl" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tvdigital.de" site_id="rtlii" xmltv_id="RTL II">RTL II</channel>
+    <channel update="i" site="tvdigital.de" site_id="rtlnitro" xmltv_id="RTL NITRO">RTL NITRO</channel>
+    <channel update="i" site="tvdigital.de" site_id="swr" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="tvdigital.de" site_id="sat1" xmltv_id="Sat.1">Sat.1</channel>
+    <channel update="i" site="tvdigital.de" site_id="sat1gold" xmltv_id="Sat.1 Gold">Sat.1 Gold</channel>
+    <channel update="i" site="tvdigital.de" site_id="servustv" xmltv_id="Servus TV">Servus TV</channel>
+    <channel update="i" site="tvdigital.de" site_id="sport1" xmltv_id="SPORT1">SPORT1</channel>
+    <channel update="i" site="tvdigital.de" site_id="startv" xmltv_id="Star TV">Star TV</channel>
+    <channel update="i" site="tvdigital.de" site_id="superrtl" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="tvdigital.de" site_id="tlc" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tvdigital.de" site_id="vox" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tvdigital.de" site_id="wdr" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tvdigital.de" site_id="zdf" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tvdigital.de" site_id="zdfinfo" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="tvdigital.de" site_id="zdfneo" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="tvdigital.de" site_id="ntv" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="tvdigital.de" site_id="sixx" xmltv_id="Sixx">Sixx</channel>
+    <channel update="i" site="tvdigital.de" site_id="tagesschau24" xmltv_id="tagesschau24">tagesschau24</channel>
+
+
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="894" xmltv_id="BBC News HD">BBC News HD</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="74" xmltv_id="BBC1 London">BBC1 London</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="93" xmltv_id="BBC2 London">BBC2 London</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="893" xmltv_id="BBC4 HD">BBC4 HD</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="112" xmltv_id="Bloomberg TV">Bloomberg TV</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="126" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="476" xmltv_id="Channel 4 HD">Channel 4 HD</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="657" xmltv_id="Channel 5 HD">Channel 5 HD</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="139" xmltv_id="E4">E4</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="142" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="145" xmltv_id="Film4">Film4</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="172" xmltv_id="ITV London">ITV London</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="180" xmltv_id="ITV2">ITV2</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="360" xmltv_id="ITV3">ITV3</channel>
+    <channel update="i" site="m.tvguide.co.uk-full" site_id="361" xmltv_id="More4">More4</channel>
+
+ 
+    <channel update="i" site="teleboy.ch" site_id="350" xmltv_id="3+">3+</channel>
+    <channel update="i" site="teleboy.ch" site_id="311" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="teleboy.ch" site_id="351" xmltv_id="4+">4+</channel>
+    <channel update="i" site="teleboy.ch" site_id="348" xmltv_id="5+">5+</channel>
+    <channel update="i" site="teleboy.ch" site_id="309" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="teleboy.ch" site_id="175" xmltv_id="Anixe HD">Anixe HD</channel>
+    <channel update="i" site="teleboy.ch" site_id="40" xmltv_id="ARD-alpha">ARD-alpha</channel>
+    <channel update="i" site="teleboy.ch" site_id="310" xmltv_id="Arte">Arte</channel>
+    <channel update="i" site="teleboy.ch" site_id="336" xmltv_id="BR HD">BR HD</channel>
+    <channel update="i" site="teleboy.ch" site_id="70" xmltv_id="VIVA / Comedy Central">VIVA / Comedy Central</channel>
+    <channel update="i" site="teleboy.ch" site_id="154" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="teleboy.ch" site_id="249" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="teleboy.ch" site_id="143" xmltv_id="Kabel1">Kabel1</channel>
+    <channel update="i" site="teleboy.ch" site_id="313" xmltv_id="Kanal9">Kanal9</channel>
+    <channel update="i" site="teleboy.ch" site_id="343" xmltv_id="KiKa HD">KiKa HD</channel>
+    <channel update="i" site="teleboy.ch" site_id="323" xmltv_id="S1">S1</channel>
+    <channel update="i" site="teleboy.ch" site_id="84" xmltv_id="Tele1">Tele1</channel>
+    <channel update="i" site="teleboy.ch" site_id="86" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="teleboy.ch" site_id="21" xmltv_id="Telebasel">Telebasel</channel>
+    <channel update="i" site="teleboy.ch" site_id="298" xmltv_id="TeleBielingue">TeleBielingue</channel>
+    <channel update="i" site="teleboy.ch" site_id="22" xmltv_id="TeleBärn">TeleBärn</channel>
+    <channel update="i" site="teleboy.ch" site_id="20" xmltv_id="TeleM1">TeleM1</channel>
+
+
+
+	
+</settings>

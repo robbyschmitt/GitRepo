@@ -31,25 +31,26 @@ fl.close()
 fl = open(fpath + ktemp2, 'w', encoding='utf-8')      # Need fileinput.input not open
 for sender in open(fpath + tvlist, encoding='utf-8'):
     # Get the station name
-    station = re.match('(.*?)XOX', sender).group(0)
-    station = station[:-4]
-    # Get the tvg-id
-    tvgid = re.search('XOX_(.*?)_XOX', sender).group(0)
-    tvgid = 'tvg-id="' + tvgid[4:-4] + '"'
-    print(tvgid)
-    # Now loop these two variables into the main file
-    for kodi in fileinput.input(fpath + ktemp1, openhook=fileinput.hook_encoded('utf-8')):
-        if station in kodi:
-            kodi = kodi.replace(station, station.lower())
-            kodi = kodi.replace('#EXTINF', 'P#EXTINF')
-            kodi = kodi.rstrip()
-            kodi = re.sub('tvg-id="(.*?)"', tvgid, kodi)
-            print(kodi)
-            fl.write(kodi)
-        elif 'http' in kodi:
-            fl.write(kodi)
-        else:
-            pass
+    try:
+        station = re.match('(.*?)XOX', sender).group(0)
+        station = station[:-4]
+        # Get the tvg-id
+        tvgid = re.search('XOX_(.*?)_XOX', sender).group(0)
+        tvgid = 'tvg-id="' + tvgid[4:-4] + '"'
+        # Now loop these two variables into the main file
+        for kodi in fileinput.input(fpath + ktemp1, openhook=fileinput.hook_encoded('utf-8')):
+            if station in kodi:
+                kodi = kodi.replace(station, station.lower())
+                kodi = kodi.replace('#EXTINF', 'P#EXTINF')
+                kodi = kodi.rstrip()
+                kodi = re.sub('tvg-id="(.*?)"', tvgid, kodi)
+                fl.write(kodi)
+            elif 'http' in kodi:
+                fl.write(kodi)
+            else:
+                pass
+    except Exception:
+        pass
 pass
 fl.close()
 
@@ -59,19 +60,21 @@ fl = open(fpath + ktemp3, 'w', encoding='utf-8')
 for clean in open(fpath + ktemp2, 'r', encoding='utf-8').readlines():
     if 'P#EXTINF'in clean:
         clean=clean.replace('P#EXTINF', '#EXTINF')
+        clean = clean.replace('[/COLOR]', '[/COLOR]\n')
         fl.write(clean)
     else:
         pass
 pass
 fl.close()
 
-# Step three : Make a List with each line as a further list to sort the list of lists by element 2
+"""# Step three : Make a List with each line as a further list to sort the list of lists by element 2
 klist2 =[]
 for line in fileinput.input(fpath + ktemp3, openhook=fileinput.hook_encoded("utf-8")):
     sp = line.split(' ')
     klist2.append(sp)
 
 slist = sorted(klist2, key=itemgetter(4))
+
 
 # Step four : Make the final m3u List
 fl = open(fpath + 'kodistr-f.m3u', 'w', encoding='utf-8')
@@ -83,6 +86,7 @@ while i >= 0:
     fl.write(l)
     i = i - 1
 fl.close()
+"""
 
 # Step four : Get the IPTV Download for missing Channels
 url = 'https://www.iptv4sat.com/download-iptv-germany/'

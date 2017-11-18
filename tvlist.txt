@@ -1,82 +1,78 @@
-3+ HD
-3sat HD
-4+ HD
-5+ HD
-ARD HD
-Anixe HD
-Ard-alpha DE
-Arte HD
-BBC News HD EN
-BBC1 HD EN
-BBC2 HD EN
-BBC4 HD (UK Proxy/VPN)
-BR HD
-Bloomberg TV EN
-CCTV News EN
-CNN EN
-Channel 4 HD EN
-Channel 5 EN
-Comedy Central/VIVA HD
-DMAX
-Disney Channel
-E4 EN 
-EuroSport
-Film4 EN
-ITV HD EN
-ITV2 EN
-ITV3 EN
-Kabel 1 HD
-Kanal 9 DE
-KiKa HD
-MDR
-MTV HD DE
-More 4 EN
-N24 HD
-NDR HD
-Nick/Comedy Cent
-ORF1 HD
-ORF2 HD
-PHOENIX HD
-Pro7 HD
-Pro7Maxx HD
-Puls 8
-RIC
-RTL 2 HD
-RTL HD
-RTL Nitro HD
-S1 HD
-SRF 1 HD
-SRF info HD
-SRF zwei HD
-SWR HD
-Sat.1 Gold DE
-Sat.1 HD
-Servus TV HD
-Sport 1
-Star TV DE
-Star TV DE
-Super RTL HD
-TLC Germany
-TLC Germany DE
-TSO HD
-TV24 HD
-TVO HD
-Tele 1
-Tele 5
-Tele Basel
-Tele Bielingue
-Tele Bärn
-Tele M1 HD
-Tele Züri
-VOX HD
-WDR Fernsehen
-WDR HD
-ZDF HD
-ZDF neo HD
-ZDF-Info HD
-n-tv
-n-tv
-sixx HD
-tagesschau24
-zdf.kultur HD
+3+ HD XOX_3+_XOX
+3sat HD XOX_3sat_XOX
+4+ HD XOX_4+_XOX
+5+ HD XOX_5+_XOX
+ARD HD XOX_Das Erste_XOX
+Anixe HD XOX_Anixe HD_XOX
+Ard-alpha DE XOX_ARD-alpha_XOX
+Arte HD XOX_Arte_XOX
+BBC News HD EN XOX_BBC News HD_XOX
+BBC1 HD EN XOX_BBC1 London_XOX
+BBC2 HD EN XOX_BBC2 London_XOX
+BBC4 HD (UK Proxy/VPN) XOX_BBC4 HD_XOX
+BR HD XOX_BR HD_XOX
+Bloomberg TV EN XOX_Bloomberg TV_XOX
+CCTV News EN XOX_nn_XOX
+CNN EN XOX_CNN_XOX
+Channel 4 HD EN XOX_Channel 4 HD_XOX
+Channel 5 EN XOX_Channel 5 HD_XOX
+Comedy Central/VIVA HD XOX_VIVA / Comedy Central_XOX
+DMAX XOX_DMAX_XOX
+Disney Channel XOX_Disney XD_XOX
+E4 EN XOX_E4_XOX
+EuroSport XOX_Eurosport_XOX
+Film4 EN XOX_Film4_XOX
+ITV HD EN XOX_ITV London_XOX
+ITV2 EN XOX_ITV2_XOX
+ITV3 EN XOX_ITV3_XOX
+Kabel 1 HD XOX_Kabel1_XOX
+Kanal 9 DE XOX_Kanal9_XOX
+KiKa HD XOX_KiKa HD_XOX
+MDR XOX_MDR_XOX
+MTV HD DE XOX_MTV_XOX
+More 4 EN XOX_More4_XOX
+N24 HD XOX_N24_XOX
+NDR HD XOX_NDR_XOX
+Nick/Comedy Cent XOX_Nickelodeon_XOX
+n-tv XOX_n-tv_XOX
+ORF1 HD XOX_ORF eins_XOX
+ORF2 HD XOX_ORF 2_XOX
+PHOENIX HD XOX_Phoenix_XOX
+Pro7 HD XOX_ProSieben_XOX
+Pro7Maxx HD XOX_ProSieben Maxx_XOX
+Puls 8 XOX_Puls 4_XOX
+RIC XOX_nn_XOX
+RTL 2 HD XOX_RTL II_XOX
+RTL HD XOX_RTL_XOX
+RTL Nitro HD XOX_RTL NITRO_XOX
+S1 HD XOX_S1_XOX
+SRF 1 HD XOX_SRF 1_XOX
+SRF info HD XOX_SRF info_XOX
+SRF zwei HD XOX_SRF zwei_XOX
+SWR HD XOX_SWR_XOX
+Sat.1 Gold DE XOX_Sat.1 Gold_XOX
+Sat.1 HD XOX_Sat.1_XOX
+Servus TV HD XOX_Servus TV_XOX
+sixx HD XOX_Sixx_XOX
+Sport 1 XOX_SPORT1_XOX
+Star TV DE XOX_Star TV_XOX
+Super RTL HD XOX_Super RTL_XOX
+tagesschau24 XOX_tagesschau24_XOX
+TLC Germany XOX_TLC_XOX
+TSO HD XOX_nn_XOX
+TV24 HD XOX_nn_XOX
+TVO HD XOX_nn_XOX
+Tele 1 XOX_Tele1_XOX
+Tele 5 XOX_Tele 5_XOX
+Tele Basel XOX_Telebasel_XOX
+Tele Bielingue XOX_TeleBielingue_XOX
+Tele Bärn XOX_TeleBärn_XOX
+Tele M1 HD XOX_TeleM1_XOX
+Tele Züri XOX_Tele Züri_XOX
+VOX HD XOX_VOX_XOX
+WDR HD XOX_WDR_XOX
+ZDF HD XOX_ZDF_XOX
+ZDF neo HD XOX_ZDFneo_XOX
+ZDF-Info HD XOX_ZDFinfo_XOX
+zdf.kultur HD XOX_nnXOX
 

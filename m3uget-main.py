@@ -30,12 +30,21 @@ fl.close()
 
 fl = open(fpath + ktemp2, 'w', encoding='utf-8')      # Need fileinput.input not open
 for sender in open(fpath + tvlist, encoding='utf-8'):
-    sender = sender.rstrip()
+    # Get the station name
+    station = re.match('(.*?)XOX', sender).group(0)
+    station = station[:-4]
+    # Get the tvg-id
+    tvgid = re.search('XOX_(.*?)_XOX', sender).group(0)
+    tvgid = 'tvg-id="' + tvgid[4:-4] + '"'
+    print(tvgid)
+    # Now loop these two variables into the main file
     for kodi in fileinput.input(fpath + ktemp1, openhook=fileinput.hook_encoded('utf-8')):
-        if sender in kodi:
-            kodi = kodi.replace(sender, sender.lower())
+        if station in kodi:
+            kodi = kodi.replace(station, station.lower())
             kodi = kodi.replace('#EXTINF', 'P#EXTINF')
             kodi = kodi.rstrip()
+            kodi = re.sub('tvg-id="(.*?)"', tvgid, kodi)
+            print(kodi)
             fl.write(kodi)
         elif 'http' in kodi:
             fl.write(kodi)
